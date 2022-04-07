@@ -129,6 +129,7 @@ var mymap = L.map('mapid').setView([51.505, -0.09], 13);
                 type: "GET",
                 crossDomain: true,
                 dataType: "jsonp",
+                cache: false,
                 async: true,
                 url: 'https://' + host + '/_healthz',
                 dest: points[i][4],
@@ -146,6 +147,7 @@ var mymap = L.map('mapid').setView([51.505, -0.09], 13);
                 crossDomain: true,
                 dataType: "jsonp",
                 async: true,
+                cache: false,
                 url: 'https://api-gdn.paas.macrometa.io/_healthz',
                 start: t0,
                 complete: function(xhr) {
